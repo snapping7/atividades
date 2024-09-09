@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string str;
+    cout << "Informe uma string: ";
+    getline(cin, str);
+
+    int contador = 0;
+    for (char c : str) {
+        if (c == 'a' || c == 'A') {
+            contador++;
+        }
+    }
+
+    if (contador > 0) {
+        cout << "A letra 'a' aparece " << contador << " vezes." << endl;
+    } else {
+        cout << "A letra 'a' nao aparece na string." << endl;
+    }
+
+    return 0;
+}
